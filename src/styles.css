@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+
+.center-panel {
+  top:50%;
+  position: fixed;;
+  left: 50%;
+  transform:translate(-50%,-50%);
+  width: 500px;
+  margin: 0 auto;
+  border-radius: 5px;
+  background-color: #c1dcd3;
+}
+
+
+input.ng-touched.ng-invalid {
+  border-color: #dc3545;
+}
+
+div.validation-error {
+
+  width: 100%;
+  margin-top: .25rem;
+  font-size: 80%;
+  color: #dc3545;
+
+}

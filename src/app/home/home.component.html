@@ -1,0 +1,28 @@
+
+<nav class="navbar navbar-light bg-light justify-content-between">
+  <a class="navbar-brand">Welcome To Home</a>
+  <button class="btn btn-outline-success my-2 my-sm-0" type="submit" (click)="reload()" >Refresh Page</button>
+  <form class="form-inline" (ngSubmit)="Logout()">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" >Logout</button>
+  </form>
+</nav>
+<br>
+<p> Current date & time : <b>{{date}}</b> </p>
+<p *ngIf="ipAddress"> Ip Address is: <b>{{ipAddress.ip}}</b> </p>
+<p> User Name </p>
+<br>
+<table class="table table-hover">
+  <thead>
+  <th>Id</th>
+  <th>Name</th>
+  <th>Note</th>
+  </thead>
+  <tbody>
+  <tr *ngFor="let emp of employee">
+    <td > {{emp.Id}} </td>
+    <td >{{emp.UserName}} </td>
+    <td >{{emp.Notes}} </td>
+
+  </tr>
+  </tbody>
+</table>
